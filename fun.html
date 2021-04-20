@@ -21,7 +21,13 @@
 function changeBg() {
   document.body.style.backgroundColor = getRandomColor()
 }
-document.addEventListener('DOMContentLoaded', function () {setInterval(changeBg, 100)})
+document.addEventListener('DOMContentLoaded', function () {
+  setInterval(changeBg, 200);
+  var audio = new Audio('deceptacon.mp3')
+  document.addEventListener('click', function () {
+    audio.play()
+  })
+})
 </script>
 </body>
 
